@@ -7,7 +7,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Conecta el socket en el puerto cuando el servidor esté escuchando
 server_dir = ('localhost', 6667)
-print ('conectando a %s puerto %s',server_dir)
+print('conectando a %s puerto %s', server_dir)
 sock.connect(server_dir)
 
 contador = 0
@@ -16,7 +16,7 @@ while contador <= 5:
     print("Paso:", contador)
     datos = sock.recv(10)
     print(datos.decode('utf-8'))
-    mensaje = b'123456789012345678901234567890'
+    mensaje = b'3'
     print('enviando "%rb"', mensaje)
     sock.sendall(mensaje)
 
@@ -30,7 +30,7 @@ while contador <= 5:
         print('recibiendo "%s"', data)
 
     contador = contador + 1
-    print ("Paso:", contador)
+    print("Paso:", contador)
 
-print ('cerrando socket')
+print('cerrando socket')
 sock.close()

@@ -1,0 +1,7 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/lucasdebarbieri/Library/CloudStorage/OneDrive-UCA/Tercer Año/Protocolos de Internet/PDI_2024-TP1-TP2-TP3-TP4/TP1/output/servidor_concurrente_real"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003CDC, symSize: 0x1E8 }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003CDC, symSize: 0x1E8 }
+...
